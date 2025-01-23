@@ -1,0 +1,426 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap:0.5rem;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle span{
+    font-size: 3rem;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top{
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E9E9E9;
+}
+
+.left ul li, .right ul li, nav ul li, .slide-content p{
+    font-family: 'Arial', sans-serif; 
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    color: black; 
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+.bottom nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.logo{
+    display: inline;
+}
+
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 600px;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.hero aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    text-align: right;
+    width: 400px;
+}
+
+.hero aside span {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero aside button {
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 2px solid snow;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero aside button:hover {
+    background-color: #e76f40;
+}
+
+.glide{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.glide__slide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slide-content {
+    text-align: center;
+    width: 30%; 
+}
+
+.slide-content img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; 
+    object-fit: contain;
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.glide__arrows{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    color: white;
+}
+
+/* Retail Locator */
+.retail-locator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #222;
+    color: white;
+}
+
+.locator-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.locator-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.locator-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.locator-text button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.locator-text button:hover {
+    background-color: #e76f40;
+}
+
+.locator-map {
+    flex: 1;
+    text-align: right;
+}
+
+.locator-map img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.locator-text button{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+
+.featured-products {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    width: 22%;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.product p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.testimonial{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.testimonial p:last-child {
+    font-weight: bold;
+}
+
+footer {
+    color: white;
+    background-color: #222;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+}
+
+.footer-simple {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-simple p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-simple nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-simple nav ul li {
+    display: inline;
+}
+
+.footer-simple nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-simple nav ul li a:hover {
+    color: #e76f40;
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    nav .top, nav .bottom {
+        display: none; 
+    }
+    
+    .mobile-nav-open .top, .mobile-nav-open .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .retail-locator {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .locator-text, .locator-map {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    
+    .products, .featured-products {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-simple nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-simple nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .glide__slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slide-content {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .glide__arrows {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .glide__arrow {
+        background: rgba(0,0,0,0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .testimonials{
+        padding: 0;
+    }
+}
